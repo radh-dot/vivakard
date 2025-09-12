@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivakard - Sell Gift Cards for Naira Instantly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-effect {
+            /* Updated to match the brighter lime-300 color */
+            box-shadow: 0 0 15px rgba(190, 242, 100, 0.4), 0 0 30px rgba(190, 242, 100, 0.3);
+        }
+        .social-icon {
+            /* Makes the icon white by default */
+            filter: brightness(0) invert(1);
+            transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+        }
+        .social-icon:hover {
+            /* Keeps the icon white and adds a glow effect with the logo color */
+            filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(190, 242, 100, 0.9));
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Main Container -->
+    <div class="flex flex-col min-h-screen">
+
+        <!-- Header -->
+        <header class="py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-center">
+                <img src="./vivakard-logo.png" 
+                     alt="Vivakard Logo" class="h-12 md:h-16">
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow flex items-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Headline -->
+                    <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-wide text-lime-300 leading-tight">
+                        Turn Your Gift Cards into Instant Naira.
+                    </h1>
+                    <!-- Subheadline -->
+                    <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                        Vivakard makes it easy and secure to sell gift cards from any country and get paid in Naira. Get the best rates and fast payouts, right from your phone.
+                    </p>
+                </div>
+
+                <!-- Download Buttons -->
+                <div class="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <!-- Android Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.gift.vivakard&hl=en" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-lime-300 text-gray-900 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full transform transition-transform duration-300 hover:scale-105 glow-effect">
+                        <img src="./google-play.png" alt="Google Play Icon" class="w-6 h-6">
+                        Get it on Google Play
+                    </a>
+
+                    <!-- iOS Button -->
+                    <div class="relative w-full sm:w-auto">
+                        <button disabled class="w-full sm:w-auto flex items-center justify-center gap-3 bg-gray-700 text-gray-400 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full cursor-not-allowed">
+                            <img src="./app-store.png" alt="App Store Icon" class="w-6 h-6">
+                            Download on the App Store
+                        </button>
+                        <span class="absolute -top-2 -right-1 sm:-right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                            Coming Soon
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-6 sm:py-8 px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
+            <div class="container mx-auto text-center text-gray-400">
+                <!-- Social Media Icons -->
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.instagram.com/vivakardofficial/" target="_blank" rel="noopener noreferrer" class="hover:text-lime-300 transition-colors duration-300">
+                        <img src="./instagram.png" alt="Instagram" class="w-6 h-6 social-icon">
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/Vivakard" target="_blank" rel="noopener noreferrer" class="hover:text-lime-300 transition-colors duration-300">
+                        <img src="./facebook.png" alt="Facebook" class="w-6 h-6 social-icon">
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="https://t.me/vivakardtrade" target="_blank" rel="noopener noreferrer" class="hover:text-lime-300 transition-colors duration-300">
+                        <img src="./telegram.png" alt="Telegram" class="w-6 h-6 social-icon">
+                        <span class="sr-only">Telegram</span>
+                    </a>
+                     <a href="https://x.com/VivakardApp" target="_blank" rel="noopener noreferrer" class="hover:text-lime-300 transition-colors duration-300">
+                        <img src="./x-icon.png" alt="X" class="w-6 h-6 social-icon">
+                        <span class="sr-only">X</span>
+                    </a>
+                </div>
+                <!-- Help Email -->
+                <div>
+                    <a href="mailto:help@vivakard.com" class="hover:text-lime-300 transition-colors duration-300">
+                        help@vivakard.com
+                    </a>
+                </div>
+                <!-- Copyright -->
+                <p class="mt-4 text-sm text-gray-500">
+                    &copy; 2025 Vivakard. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
